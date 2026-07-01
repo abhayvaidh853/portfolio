@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f9fafc;
+  color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+  color: #0A1F44;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0A1F44;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #f9fafc, #eef2f7);
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.hero h2 {
+  color: #0A1F44;
+  margin: 10px 0;
+}
+
+.hero p {
+  color: #555;
+}
+
+.btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 30px;
+  background: #0A1F44;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #163b7a;
+}
+
+/* SECTION */
+section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* ABOUT */
+.about p {
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+}
+
+/* SKILLS */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skills-container span {
+  background: #e6ecf5;
+  padding: 10px 18px;
+  border-radius: 20px;
+}
+
+/* PROJECTS */
+.projects {
+  background: white;
+}
+
+.project-card {
+  background: #f1f3f7;
+  margin: 20px auto;
+  padding: 25px;
+  width: 75%;
+  border-radius: 12px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card p {
+  margin: 6px 0;
+  color: #444;
+}
+
+/* CONTACT */
+.contact {
+  background: #0A1F44;
+  color: white;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .project-card {
+    width: 95%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
